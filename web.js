@@ -6,7 +6,7 @@ var note = Buffer(fs.readFileSync('index.html', 'utf-8'));
 var text = note.toString('utf-8', 0, 27);
 
 app.get('/', function(request, response) {
-  response.send(text);
+  response.send("working");
 });
 
 var port = process.env.PORT || 5000;
