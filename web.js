@@ -2,8 +2,8 @@ var express = require('express');
 
 var app = express.createServer(express.logger());
 
-var note = Buffer(fs.readFileSync('index.html', 'utf-8'));
-var text = note.toString('utf-8', 0, 27);
+#var note = Buffer(fs.readFileSync('index.html', 'utf-8'));
+#var text = note.toString('utf-8', 0, 27);
 
 app.get('/', function(request, response) {
   response.send("working");
